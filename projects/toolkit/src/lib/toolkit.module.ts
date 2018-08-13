@@ -12,6 +12,7 @@ const pipes = [
 @NgModule({
   imports: [],
   declarations: pipes,
-  exports: pipes
+  exports: pipes,
+  providers: pipes
 })
 export class ToolkitModule { }
