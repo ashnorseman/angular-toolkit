@@ -21,9 +21,9 @@ export class I18nService {
   trans(str: string, ...args: any[]): string {
     if (!str) { return ''; }
 
-    if (!args.length) { return str; }
-
     str = str.replace(/^{[^}]+}/, '');
+
+    if (!args.length) { return str; }
 
     // insert variables
     args.forEach((arg: any, i: number) => {
